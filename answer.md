@@ -1,54 +1,23 @@
 # 第1次隨堂題目-隨堂-QZ1
 >
->學號：1234567   (學號和姓名都要寫)
+>學號：112111121 呂佩衫   
 ><br />
->姓名：王小明
+>姓名：呂佩衫
 >
-
-本份文件包含以下主題：(至少需下面兩項，若是有多者可以自行新增)
-- [x] 說明內容
-
-## 說明程式與內容
-
-開始寫說明，該說明需說明想法，
-並於之後再對上述想法的每一部分將程式進一步進行展現，
-若需引用程式區則使用下面方法，
-若為.cs檔內程式除了於敘述中需註明檔案名稱外，
-還需使用語法` ```語言種類 程式碼 ``` `，其中語言種類若是要用python則使用py，java則使用java，C/C++則使用cpp，
-下段程式碼為語言種類選擇csharp使用後結果：
-
-```csharp
-public void mt_getResult(){
-    ...
-}
-```
-
-若要於內文中標示部分網頁檔，則使用以下標籤` ```html 程式碼 ``` `，
-下段程式碼則為使用後結果：
-
-```html
-<%@ Page Language="C#" AutoEventWireup="true" ...>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" ...>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
-```
-更多markdown方法可參閱[https://ithelp.ithome.com.tw/articles/10203758](https://ithelp.ithome.com.tw/articles/10203758)
-
-請在撰寫"說明程式與內容"該塊內容，請把原該塊內上述敘述刪除，該塊上述內容只是用來指引該怎麼撰寫內容。
 
 1. 
 
 Ans: 
+在合併的過程中，沒有發生衝突，但是有發現add_paln的內容被覆蓋掉。
+將結果詢問ai後，推測應該是兩次修改都在檔案的同一行位址，而第二次合併時判定為覆蓋（Overwrite）而非銜接（Append）。
+最後是直接手動編輯，將兩條分支的內容整合，
+![alt text](<螢幕擷取畫面 2026-04-13 140012.png>)
+如圖，合併兩條分支時未發生衝突。
+
+![alt text](<螢幕擷取畫面 2026-04-13 140202.png>)
+有兩段不一樣的文字，因add_plan疑似被覆蓋，所以實際檔案室由手動更改。
+
+![alt text](<螢幕擷取畫面 2026-04-13 140533.png>)
+Git 自動將兩段內容接在一起
+
 
